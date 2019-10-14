@@ -15,8 +15,7 @@
 	}
 </script>
 
-<div>
-	{#if drawOutlet}
-	<svelte:component this={router.routes[currentRoute]["component"]} router={router} currentRoute={route}/>
-	{/if}
-</div>
+
+{#if drawOutlet}
+<svelte:component this={router.routes[currentRoute]["component"]} router={router} currentRoute={route}/>
+{/if}
